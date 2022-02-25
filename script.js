@@ -11,10 +11,13 @@ function selectShirtStyle (type, element) {
     console.log(type);
     const sModel = document.querySelector(`#s-${type}`);
     const item = sModel.querySelector('.selected');
-    if (item !== undefined) {
-        item.classList.remove('selected')
+    console.log(item!==null, element);
+    if (item !== null) {
+        item.classList.remove('selected'); 
+        item.querySelector('.item-background-1').style.borderColor = "transparent";
     } 
     element.classList.add('selected');
+    element.querySelector('.item-background-1').style.borderColor = "blue";
 } 
 
 /* function selectShirtStyleTest () {
@@ -30,20 +33,24 @@ function selectShirtStyle (type, element) {
     promise.then();
 } */
 
-/* function getLastShirts () {
+function getLastShirts () {
     const promise = axios.get("https://mock-api.driven.com.br/api/v4/shirts-api/shirts");
-    promise.then((response) => {
-        let lastShirt = document.querySelector('.shirts');
-        lastShirt.innerHTML = `
-        
+    promise.then(renderLastShirts);
+}
 
-
-        `;
-    });
-} */
-
+function renderLastShirts (shirt) {
+    let lastShirts = document.querySelector('.last-shirts-box');
+    lastShirts.innerHTML = `
+    
+    <div class="last-shirts">
+    
+    </div>    
+    
+    `
+}
 
 
 
 
 askUserName();
+getLastShirts ();

@@ -1,5 +1,30 @@
 footer {
     height: 342px;
-    width: 1366px;
+    width: 100vw;
     background-color: #F2F2F2;
+    display: flex;
+    justify-content: center;
+}
+
+.last-orders {
+    height: 342px;
+    width: 1366px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: blueviolet;
+}
+
+.last-shirts-box {
+    height: 237px;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    background-color: aqua;
+}
+
+.last-shirt {
+    height: 237px;
+    width: 202px;
+    background-color: chartreuse;
 }

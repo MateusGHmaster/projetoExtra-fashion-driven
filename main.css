@@ -65,7 +65,7 @@ main {
     width: 100px;
     height: 100px;
     background-color: #d40a0a;
-    border: 3px;
+    border: 3px solid transparent;
     border-radius: 100%;
 }
 
