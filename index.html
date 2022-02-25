@@ -4,17 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="footer.css">
+    <title>Fashion Driven</title>
 </head>
 <body>
     
     <header>
         <section class="top-bar">
-            <div class="logo">
-
-            </div>
             <div class="store-name">
-
+                <img src="./media/FashionDriven/Logo.png" alt="Store-Logo">
             </div>
         </section>
     </header>
@@ -24,16 +26,34 @@
             <section class="shirts-shirt" id="s-shirt">
                 <div class="model-title"></div>
                 <div class="models">
-                    <div class="t-shirt" onclick="selectShirtStyle('shirt', this)">t-shirt</div>
-                    <div class="camiserta" onclick="selectShirtStyle('shirt', this)">camiseta</div>
-                    <div class="manga-longa" onclick="selectShirtStyle('shirt', this)">manga longa</div>
+                    <div class="model-1">
+                        <div class="t-shirt" onclick="selectShirtStyle('shirt', this)">
+                            <img class ="model-fig-1" src="./media/FashionDriven/tshirt.png" alt="tshirt">
+                            <img class ="elipse-1" src="./media/FashionDriven/Ellipse 1.png" alt="shirt-1">
+                            <figcaption class="shirt-type">T-shirt</figcaption>
+                        </div>
+                    </div>
+                    <div class="model-2">
+                        <div class="shirt" onclick="selectShirtStyle('shirt', this)">
+                            <img class ="model-fig-2" src="./media/FashionDriven/Camiseta.png" alt="camiseta">
+                            <img class ="elipse-2" src="./media/FashionDriven/Ellipse 1.png" alt="shirt-2">
+                            <figcaption class="shirt-type">Camiseta</figcaption>
+                        </div>
+                    </div>
+                    <div class="model-3">
+                        <div class="long-arm" onclick="selectShirtStyle('shirt', this)">
+                            <img class ="model-fig-3" src="./media/FashionDriven/Mangalonga.png" alt="mangalonga">
+                            <img class ="elipse-3" src="./media/FashionDriven/Ellipse 1.png" alt="shirt-3">
+                            <figcaption class="shirt-type">T-shirt</figcaption>
+                        </div>
+                    </div>
                 </div>
             </section>
             <section class="shirts-neck" id="s-neck">
                 <div class="neck-title"></div>
                 <div class="necks">
-                    <div class="gola-v" onclick="selectShirtStyle('neck', this)">gola v</div>
-                    <div class="gola-rendonda" onclick="selectShirtStyle('neck', this)">gola redonda</div>
+                    <div class="neck-v" onclick="selectShirtStyle('neck', this)">gola v</div>
+                    <div class="neck-rounded" onclick="selectShirtStyle('neck', this)">gola redonda</div>
                     <div class="gola-polo" onclick="selectShirtStyle('neck', this)">gola polo</div>
                 </div>
             </section>
@@ -54,7 +74,10 @@
                 </section>
             </section>
         </section>
-        <section class="main-2"></section>
+        <section class="main-2">
+            <img src="./media/FashionDriven/ilustração.png" alt="store-ilustration" height="667" >
+        </section>
+        <section class="selected"></section>
     </main>
 
     <footer>

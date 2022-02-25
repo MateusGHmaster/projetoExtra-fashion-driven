@@ -18,12 +18,12 @@ function selectShirtStyle (type, element) {
 }
 
 
-function postLastShirt () {
+/* function postLastShirt () {
     const promise = axios.post("https://mock-api.driven.com.br/api/v4/shirts-api/shirts");
     promise.then();
-}
+} */
 
-function getLastShirts () {
+/* function getLastShirts () {
     const promise = axios.get("https://mock-api.driven.com.br/api/v4/shirts-api/shirts");
     promise.then((response) => {
         let lastShirt = document.querySelector('.shirts');
@@ -33,7 +33,7 @@ function getLastShirts () {
 
         `;
     });
-}
+} */
 
 
 

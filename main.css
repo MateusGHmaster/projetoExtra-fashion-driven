@@ -1,0 +1,41 @@
+main {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 89px;
+    height: 785px;
+}
+
+.main-1 {
+    width: 50vw;
+    background-color: #E5E5E5;
+}
+
+.main-2 {
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #404EED;
+}
+
+.model-1 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 0;
+    left: 0;
+    width: 100px;
+    background-color: aqua;
+}
+
+.elipse-1 {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.model-fig-1 {
+    position: absolute;
+    margin-top: 0px;
+}
