@@ -1,7 +1,7 @@
 main {
     display: flex;
     justify-content: space-between;
-    margin-top: 89px;
+    margin-top: 73px;
     height: 785px;
 }
 
@@ -18,24 +18,57 @@ main {
     background-color: #404EED;
 }
 
-.model-1 {
+.shirts-shirt {
+    margin-left: 100px;
+}
+
+.models {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 40px;
+    /* justify-content: space-between; */
+}
+
+.model-title {
+    margin-top: 38px;
+}
+
+.model {
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    top: 0;
+    /* justify-content: space-between; */
+    margin-top: 37px;
     left: 0;
     width: 100px;
     background-color: aqua;
 }
 
-.elipse-1 {
-    position: relative;
-    top: 0;
-    left: 0;
+.model-fig {
+    position: absolute;
+    margin-top: 9px;
+    margin-left: 10px;
 }
 
-.model-fig-1 {
-    position: absolute;
-    margin-top: 0px;
+.selected {
+    border: 3px;
+    border-radius: 100%;
+    border-color: #404EED;
+}
+
+.t-shirt {
+    height: fit-content;
+}
+
+.item-background-1 {
+    width: 100px;
+    height: 100px;
+    background-color: #d40a0a;
+    border: 3px;
+    border-radius: 100%;
+}
+
+.shirt-type {
+    text-align: center;
 }

@@ -15,7 +15,14 @@ function selectShirtStyle (type, element) {
         item.classList.remove('selected')
     } 
     element.classList.add('selected');
-}
+} 
+
+/* function selectShirtStyleTest () {
+    let shirtSelection = document.querySelector('.model-1');
+    shirtSelection.addEventListener('click', function () {    
+        shirtSelection.style.borderColor = "#404EED";
+    });
+} */
 
 
 /* function postLastShirt () {
