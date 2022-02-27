@@ -32,21 +32,21 @@
                     <div class="model">
                         <div class="t-shirt" onclick="selectShirtStyle('shirt', this)">
                             <img class ="model-fig" src="./media/FashionDriven/tshirt.png" alt="tshirt">
-                            <div class="item-background-1"></div>
+                            <div class="item-background"></div>
                             <figcaption class="shirt-type">T-shirt</figcaption>
                         </div>
                     </div>
                     <div class="model">
                         <div class="shirt" onclick="selectShirtStyle('shirt', this)">
                             <img class ="model-fig" src="./media/FashionDriven/Camiseta.png" alt="camiseta">
-                            <div class="item-background-1"></div>
+                            <div class="item-background"></div>
                             <figcaption class="shirt-type">Camiseta</figcaption>
                         </div>
                     </div>
                     <div class="model">
                         <div class="long-arm" onclick="selectShirtStyle('shirt', this)">
                             <img class ="model-fig" src="./media/FashionDriven/Mangalonga.png" alt="mangalonga">
-                            <div class="item-background-1"></div>
+                            <div class="item-background"></div>
                             <figcaption class="shirt-type">T-shirt</figcaption>
                         </div>
                     </div>
@@ -55,26 +55,53 @@
             <section class="shirts-neck" id="s-neck">
                 <div class="neck-title"></div>
                 <div class="necks">
-                    <div class="neck-v" onclick="selectShirtStyle('neck', this)">
-                        <img class="neck-fig" src="./media/FashionDriven/GolaV.png" alt="gola-v">
-                        <div class="item-background-1"></div>
+                    <div class="neck">
+                        <div class="neck-v" onclick="selectShirtStyle('neck', this)">
+                            <img class="neck-fig" src="./media/FashionDriven/GolaV.png" alt="gola-v">
+                            <div class="item-background"></div>
+                            <figcaption class="neck-type">Gola-V</figcaption>
+                        </div>
                     </div>
-                    <div class="neck-rounded" onclick="selectShirtStyle('neck', this)">
-                        <img class="neck-fig" src="./media/FashionDriven/GolaRedonda.png" alt="gola-v">
-                        <div class="item-background-1"></div>
+                    <div class="neck">
+                        <div class="neck-rounded" onclick="selectShirtStyle('neck', this)">
+                            <img class="neck-fig" src="./media/FashionDriven/GolaRedonda.png" alt="gola-v">
+                            <div class="item-background"></div>
+                            <figcaption class="neck-type">Gola Redonda</figcaption>
+                        </div>
                     </div>
-                    <div class="gola-polo" onclick="selectShirtStyle('neck', this)">
-                        <img class="neck-fig" src="./media/FashionDriven/GolaPolo.png" alt="gola-v">
-                        <div class="item-background-1"></div>
+                    <div class="neck">
+                        <div class="gola-polo" onclick="selectShirtStyle('neck', this)">
+                            <img class="neck-fig" src="./media/FashionDriven/GolaPolo.png" alt="gola-v">
+                            <div class="item-background"></div>
+                            <figcaption class="neck-type">Gola Polo</figcaption>
+                        </div>
                     </div>
                 </div>
             </section>
             <section class="shirts-fabric" id="s-fabric">
                 <div class="fabric-title"></div>
                 <div class="fabrics">
-                    <div class="seda" onclick="selectShirtStyle('fabric', this)">seda</div>
-                    <div class="algodao" onclick="selectShirtStyle('fabric', this)">algodão</div>
-                    <div class="poliester" onclick="selectShirtStyle('fabric', this)">poliéster</div>
+                    <div class="fabric">
+                        <div class="seda" onclick="selectShirtStyle('fabric', this)">
+                            <img class="fabric-fig" src="./media/FashionDriven/Seda.png" alt="seda">
+                            <div class="item-background"></div>
+                            <figcaption class="fabric-type">Seda</figcaption>
+                        </div>
+                    </div>
+                    <div class="fabric">
+                        <div class="algodao" onclick="selectShirtStyle('fabric', this)">
+                            <img class="fabric-fig" src="./media/FashionDriven/Algodão.png" alt="algodão">
+                            <div class="item-background"></div>
+                            <figcaption class="fabric-type">Algodão</figcaption>
+                        </div>
+                    </div>
+                    <div class="fabric">
+                        <div class="poliester" onclick="selectShirtStyle('fabric', this)">
+                            <img class="fabric-fig" src="./media/FashionDriven/Poliester.png" alt="poliéster">
+                            <div class="item-background"></div>
+                            <figcaption class="fabric-type">Poliéster</figcaption>
+                        </div>
+                    </div>
                 </div>
             </section>
             <section class="image-reference-input">
@@ -82,12 +109,15 @@
                     <p class="url-title">Imagem de Referência</p>
                 </section>
                 <section class="url-input">
-                    <input class="image-url" type="text" placeholder="Insira o link"/>
+                    <input class="image-url" type="text" placeholder="  Insira o link"/>
+                </section>
+                <section class="confirmation-button">
+                    <button class="confirm-button" type="button">Confirmar pedido</button>
                 </section>
             </section>
         </section>
         <section class="main-2">
-            <img src="./media/FashionDriven/ilustração.png" alt="store-ilustration" height="667" >
+            <img class="main-page-image" src="./media/FashionDriven/ilustração.png" alt="store-ilustration" height="667" >
         </section>
         <section class="selected"></section>
     </main>
@@ -95,8 +125,17 @@
     <footer>
         <section class="last-orders">
             <div class="orders-title">Últimos pedidos</div>
-            <div class="last-shirts-box">
-               
+            <div class="api-shirts-test">
+                <div class="api-shirt"></div>
+                <div class="api-shirt"></div>
+                <div class="api-shirt"></div>
+                <div class="api-shirt"></div>
+                <div class="api-shirt"> </div>
+                <div class="api-shirt"></div>
+                <div class="api-shirt"></div>
+                <div class="api-shirt"></div>
+                <div class="api-shirt"></div>
+                <div class="api-shirt"></div>
             </div>
         </section>
     </footer>

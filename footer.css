@@ -1,30 +1,33 @@
 footer {
     height: 342px;
-    width: 100vw;
+    width: 1366px;
     background-color: #F2F2F2;
     display: flex;
     justify-content: center;
 }
 
-.last-orders {
-    height: 342px;
-    width: 1366px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: blueviolet;
+.orders-title {
+    margin-top: 31px;
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
 }
 
-.last-shirts-box {
-    height: 237px;
+.api-shirts-test {
+    margin-top: 16px;
+    height: fit-content;
+    width: 1031px;
     display: flex;
     justify-content: space-between;
+    overflow-x: scroll;
+    overflow-y: hidden;
     gap: 15px;
-    background-color: aqua;
 }
 
-.last-shirt {
+.api-shirt{
     height: 237px;
-    width: 202px;
-    background-color: chartreuse;
+    min-width: 202px;
+    background-color: #FFFFFF;
+    border: solid 0px #FFFFFF;  
+    border-radius: 10px;
 }
+
