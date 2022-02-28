@@ -1,4 +1,8 @@
 let userName = '';
+let url = null;
+let validURL = null;
+let workingButton = null;
+let item = null;
 
 function askUserName () {
     while (userName === '') {
@@ -10,23 +14,37 @@ function askUserName () {
 function selectShirtStyle (type, element) {
     console.log(type);
     const sModel = document.querySelector(`#s-${type}`);
-    const item = sModel.querySelector('.selected');
+    item = sModel.querySelector('.selected');
     console.log(item!==null, element);
     if (item !== null) {
         item.classList.remove('selected'); 
-        item.querySelector('.item-background-1').style.borderColor = "transparent";
+        item.querySelector('.item-background').style.borderColor = "transparent";
     } 
     element.classList.add('selected');
-    element.querySelector('.item-background-1').style.borderColor = "blue";
+    element.querySelector('.item-background').style.borderColor = "blue";
 } 
 
-/* function selectShirtStyleTest () {
-    let shirtSelection = document.querySelector('.model-1');
-    shirtSelection.addEventListener('click', function () {    
-        shirtSelection.style.borderColor = "#404EED";
-    });
-} */
+function checkURL () {
+    url = document.querySelector('.image-url').value;
+    console.log(url);
+    if ((url !== null) &&  (url.startsWith("https://") || url.startsWith("http://"))) {
+        validURL = true;    
+    } else {
+        validURL = false;
+    }
+}
 
+function confirmOrder () {
+    let button = document.querySelector('.confirm-button');
+    console.log(validURL);
+    if (validURL === true) {
+        button.classList.remove('deactivated');
+        button.classList.add('activated');
+        alert("Encomenda realizada. Obrigado pela preferência. Volte sempre!  (づ ￣ ³￣)づ");
+    } else {
+        button.classList.add('deactivated');
+    }
+}
 
 /* function postLastShirt () {
     const promise = axios.post("https://mock-api.driven.com.br/api/v4/shirts-api/shirts");
@@ -38,8 +56,6 @@ function getLastShirts () {
     console.log(promise);
     promise.then(renderLastShirts);
 }
-
-
 
 function renderLastShirts (data) {
     for (let i of data.data) {
@@ -60,4 +76,4 @@ function renderLastShirts (data) {
 
 askUserName();
 getLastShirts ();
-renderLastShirts ();
+confirmOrder ();
