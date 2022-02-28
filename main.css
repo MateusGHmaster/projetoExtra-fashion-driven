@@ -68,11 +68,11 @@ main {
     margin-left: 21px;
 }
 
-.selected {
+/* .selected {
     border: 3px;
     border-radius: 100%;
     border-color: #404EED;
-}
+} */
 
 .item-background {
     width: 95px;

@@ -39,16 +39,20 @@ function getLastShirts () {
     promise.then(renderLastShirts);
 }
 
+
+
 function renderLastShirts (data) {
-    const lastShirts = document.querySelector('.api-shirts-test');
-    lastShirts.innerHTML += `
-    
-    <div class="api-shirt">
-        <img class="lasShirtsImages" src="${data.image}" alt="últimas-camisas" height="180" width="180">
-        <p>Criador:${data.owner}</p>
-    </div>    
-    
-    `
+    for (let i of data.data) {
+        const lastShirts = document.querySelector('.api-shirts-test');
+        lastShirts.innerHTML += `
+        
+        <div class="api-shirt">
+            <img class="last-shirts-images" src="${i.image}" alt="últimas-camisas" height="180" width="180">
+            <p class="owner"><span class="shirt-owner">Criador:&nbsp;</span>${i.owner}</p>
+        </div>    
+        
+        `
+    }
 }
 
 
