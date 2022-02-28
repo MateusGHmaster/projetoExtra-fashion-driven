@@ -35,15 +35,17 @@ function selectShirtStyle (type, element) {
 
 function getLastShirts () {
     const promise = axios.get("https://mock-api.driven.com.br/api/v4/shirts-api/shirts");
+    console.log(promise);
     promise.then(renderLastShirts);
 }
 
-function renderLastShirts (shirt) {
-    let lastShirts = document.querySelector('.last-shirts-box');
-    lastShirts.innerHTML = `
+function renderLastShirts (data) {
+    const lastShirts = document.querySelector('.api-shirts-test');
+    lastShirts.innerHTML += `
     
-    <div class="last-shirts">
-    
+    <div class="api-shirt">
+        <img class="lasShirtsImages" src="${data.image}" alt="últimas-camisas" height="180" width="180">
+        <p>Criador:${data.owner}</p>
     </div>    
     
     `
@@ -54,3 +56,4 @@ function renderLastShirts (shirt) {
 
 askUserName();
 getLastShirts ();
+renderLastShirts ();
