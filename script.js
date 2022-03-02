@@ -146,6 +146,7 @@ function getNewOrder (info) {
     if (confirm('Deseja mesmo fazer mesmo o pedido deste modelo?')) {
         postNewOrder();
         alert("Encomenda realizada. Obrigado pela preferência. Volte sempre!  (づ ￣ ³￣)づ");
+        window.location.reload();
     } else {
         window.location.reload();
     }
