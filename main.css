@@ -2,7 +2,7 @@ main {
     display: flex;
     justify-content: space-between;
     margin-top: 73px;
-    height: 785px;
+    height: 885px;
 }
 
 .main-1 {
@@ -35,7 +35,7 @@ main {
     gap: 40px;
 }
 
-.model-title {
+.model-title, .neck-title, .fabric-title {
     margin-top: 38px;
     font-size: 18px;
 }
