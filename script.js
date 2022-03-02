@@ -10,6 +10,12 @@ let fabricIsSelected = null;
 let shirt = null;
 let neck = null;
 let fabric = null;
+let newModel = null;
+let newNeck = null;
+let newMaterial = null;
+let newImage = null;
+let newOwner = null;
+let newAuthor = null;
 
 function askUserName () {
     while (userName === '') {
@@ -113,12 +119,35 @@ function renderLastShirts (data) {
         const lastShirts = document.querySelector('.api-shirts-test');
         lastShirts.innerHTML += `
         
-        <div class="api-shirt">
+        <div class="api-shirt" onclick='getNewOrder(${JSON.stringify(i)})'>
             <img class="last-shirts-images" src="${i.image}" alt="últimas-camisas" height="180" width="180">
             <p class="owner"><span class="shirt-owner">Criador:&nbsp;</span>${i.owner}</p>
         </div>    
         
         `
+    }
+}
+
+function postNewOrder () {
+    const promise = axios.post("https://mock-api.driven.com.br/api/v4/shirts-api/shirts", 
+    {model: newModel, neck: newNeck, material: newMaterial, image: newImage, owner: userName, author: newAuthor});
+    promise.then();
+}
+
+function getNewOrder (info) {
+    newModel = info.model;
+    newNeck = info.neck;
+    newMaterial = info.material;
+    newImage = info.image;
+    newOwner = userName;
+    newAuthor = userName;
+    console.log(userName);
+
+    if (confirm('Deseja mesmo fazer mesmo o pedido deste modelo?')) {
+        postNewOrder();
+        alert("Encomenda realizada. Obrigado pela preferência. Volte sempre!  (づ ￣ ³￣)づ");
+    } else {
+        window.location.reload();
     }
 }
 
